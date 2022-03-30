@@ -1,0 +1,22 @@
+# This is a program submitted by Evan Lloyd on 03/31/2022 for Innovation Specialist application
+
+concept:(hello) [hello hi hey "good morning" greetings]
+concept:(yes) [yes "all right" sure "why not" ok certainly "very well" yep yea]
+concept:(robot)[robot lego mindstorms droid ozobots droids mbot jimu arduino]
+
+u:(~robot) ~yes ^goto(robotQuestion)
+
+proposal: %robotQuestion What kind of robots are you interested in learning more about?
+	u1:([lego mindstorms]) You can find Lego Mindstorms robots here in the Foster Library
+	u1:(you) You want to learn about me? I'm so happy. As you know my name is Nao. You can learn more about me here in the Foster Library
+	u1:(ozobots) You can find Ozobots at all the libraries. They are so small and cute
+ 	u1:(mbot) mBots are good for beginners and they make learning fun. You can find them here at the Foster library
+	u1:(jimu) All our libraries have Jimu robot kits. You should check them out sometime
+	u1:(arduino) We have arduino kits you can try out!
+	
+u:(~hello) ~hello my name is Nao. What is your name?
+u:(my name is _[*]) $patronName=$1 Nice to meet you, $patronName
+u:({"how long"} "borrow a book") Of course $name you can borrow as many books as you like for up to three weeks at time.
+u:("Can I three dee print") Yes, three dee printers are available at all the libraries. You can submit your print request online.
+u:(~bye) ~bye It was nice talking to you $patronName If you have any more questions about the library just ask. See you later!
+
