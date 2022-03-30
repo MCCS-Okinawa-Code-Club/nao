@@ -19,4 +19,3 @@ u:(my name is _[*]) $patronName=$1 Nice to meet you, $patronName
 u:({"how long"} "borrow a book") Of course $name you can borrow as many books as you like for up to three weeks at time.
 u:("Can I three dee print") Yes, three dee printers are available at all the libraries. You can submit your print request online.
 u:(~bye) ~bye It was nice talking to you $patronName If you have any more questions about the library just ask. See you later!
-
